@@ -1,0 +1,10 @@
+<%# this is a comment which %> <%# is also a multiline comment %> <%# any time
+we want to inject a value %>
+
+<h1>This is the index page</h1>
+<h3>Hello <%= foo %></h3>
+<%[3,4].forEach((val)=>{ %>
+<p><%= val%></p>
+<% if(val === 2) {%>
+<p>two</p>
+<%}%> <% }); %>
